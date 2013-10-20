@@ -1,0 +1,343 @@
+@CHARSET "utf-8";
+
+/*decoration for the website*/
+html {
+	background-size: 100% 100%;
+	background: url('../material/bg.jpg') no-repeat;
+}
+
+b {
+	font-size: 20px;
+}
+
+hr {
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+}
+
+menu,ul {
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	margin: 0;
+	padding: 0;
+	display: block;
+	background-color: transparent;
+}
+
+ul {
+	list-style: none;
+}
+
+.grid-layout {
+	width: 976px;
+	margin: 0 auto;
+	position: relative;
+	background-color: transparent;
+}
+
+div .row {
+	height: 1%;
+}
+
+.homepage {
+	font-family: arial, sans-serif;
+	font-size: 14px;
+	color: #333333;
+	margin: 0 auto;
+	background: #ffffff;
+	border: 10px;
+	background-color: transparent;
+}
+
+.main-header {
+	width: 100%;
+	margin-left: -8px;
+	background-color: transparent;
+}
+
+.profile-bar {
+	margin: -8px -8px 0 0;
+	font-weight: bold;
+	background-color: #3A4951;
+	text-align: left;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 45px;
+	height: 45px;
+	position: relative;
+	line-height: 45px;
+}
+
+.profile-bar .grid-layout {
+	margin-bottom: 55px;
+	background-color: transparent;
+}
+
+.profile-bar .row {
+	height: 50px;
+	padding: 0;
+	border-bottom: none;
+}
+
+.profile-bar ul {
+	float: right;
+	margin: 0 -4px 0 0;
+}
+
+.profile-bar li {
+	padding-left: 10px;
+	float: left;
+}
+
+.profile-bar li span {
+	color: #ffffcc;
+}
+
+.profile-bar a,.primary-bar a:visited {
+	color: #ffffff;
+	padding: 0 20px 0 10px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.profile-bar a:hover,.primary-bar a:visited:hover {
+	color: #ffffff;
+	background: #583e7d;
+	padding: 8px 10px;
+	margin: 0 10px 0 0;
+	border-radius: 5px;
+}
+
+.profile-bar .dropdown-menu ul {
+	position: absolute;
+	background-color: #ffffff;
+	border: 0px solid #e1e1e1;
+	border-radius: 0 0 5px 5px;
+	min-width: 180px;
+	margin: 2px 0 0 145px;
+	float: none;
+	border-top: 0;
+	box-shadow: 1px 1px 5px #e1e1e1;
+	z-index: 1000;
+}
+
+.profile-bar .row {
+	height: 50px;
+	padding: 0;
+	border-bottom: none;
+}
+
+.profile-bar a {
+	text-decoration: none;
+}
+
+.profile-bar a .title {
+	left: 0;
+	padding: 0;
+	position: left;
+}
+
+.profile-bar a .title:hover {
+	background-color: transparent;
+	margin-left: 0;
+	padding: 0;
+}
+
+.module {
+	border: 1px solid #e1e1e1;
+	border-radius: 10px;
+	padding: 15px;
+	margin: 10px auto 20px auto;
+	background-color: transparent;
+}
+
+.login,.sign_up,.ask_question {
+	overflow: hidden;
+	margin: 50px auto 20px auto;
+	background-color: transparent;
+	background-image: -o-linear-gradient(left, #ffffcc 0%, #ffffcc 100%);
+	background-image: -moz-linear-gradient(left, #ffffcc 0%, #ffffcc 100%);
+	background-image: -webkit-linear-gradient(left, #faebdf 0%, #faebdf 100%);
+	background-image: -ms-linear-gradient(left, #ffffcc 0%, #ffffcc 100%);
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #ffffcc),
+		color-stop(1, #ffffcc));
+	color: #000000;
+	padding: 15px;
+}
+
+.login {
+	width: 350px;
+	height: 245px;
+}
+
+.sign_up {
+	width: 350px;
+	height: 300px;
+}
+
+.ask_question {
+	width: 500px;
+	height: 430px
+}
+
+.login .username,.sign_up .username {
+	height: 32px;
+	width: 80%;
+	float: left;
+	margin-left: 30px;
+	margin-top: 20px;
+	position: relative;
+	z-index: 999;
+	background-color: transparent;
+	margin-top: 15px;
+}
+
+.ask_question .caption {
+	height: 32px;
+	width: 80%;
+	float: left;
+	margin-left: 30px;
+	margin-top: 20px;
+	position: relative;
+	z-index: 999;
+	background-color: transparent;
+}
+
+.login input[type='text'],.sign_up input[type='text'] {
+	border-radius: 5px;
+	box-shadow: inset 0 5px 5px #f5f5f5;
+	border: 1px solid #d1d1d1;
+	width: 50%;
+	margin: 0 0 10px 0;
+	margin-left: 13px;
+	font-family: arial, sans-serif;
+	font-size: 16px;
+	padding: 7px 8px 6px 8px;
+	outline: none;
+}
+
+.ask_question .caption input[type='text'],.ask_question .category input[type='text']
+	{
+	border-radius: 5px;
+	box-shadow: inset 0 5px 5px #f5f5f5;
+	border: 1px solid #d1d1d1;
+	width: 60%;
+	margin: 0 0 10px 0;
+	margin-left: 35px;
+	font-family: arial, sans-serif;
+	font-size: 16px;
+	padding: 7px 8px 6px 8px;
+	outline: none;
+}
+
+.ask_question .description textarea {
+	border-radius: 5px;
+	box-shadow: inset 0 5px 5px #f5f5f5;
+	border: 1px solid #d1d1d1;
+	width: 60%;
+	margin: 0 0 10px 0;
+	margin-top: 10px;
+	margin-left: 19%;
+	font-family: arial, sans-serif;
+	font-size: 16px;
+	padding: 7px 8px 6px 8px;
+	outline: none;
+	height: 100%;
+}
+
+.login .password,.sign_up .password {
+	height: 32px;
+	width: 80%;
+	float: left;
+	margin-left: 30px;
+	position: relative;
+	z-index: 999;
+	background-color: transparent;
+	margin-top: 30px;
+}
+
+.ask_question .category,.ask_question .description {
+	height: 32px;
+	width: 80%;
+	float: left;
+	margin-left: 30px;
+	position: relative;
+	z-index: 999;
+	background-color: transparent;
+	margin-top: 30px;
+}
+
+.login input[type='password'],.sign_up input[type='password'] {
+	border-radius: 5px;
+	box-shadown: inset 0 5px #f5f5f5;
+	border: 1px solid #d1d1d1;
+	width: 50%;
+	margin: 0 0 10px 0;
+	margin-left: 27px;
+	font-family: arial, sans-serif;
+	font-size: 16px;
+	padding: 7px 8px 6px 8px;
+	outline: none;
+}
+
+.login .button,.sign_up .button,.ask_question .button {
+	height: 32px;
+	width: 80%;
+	float: left;
+	margin-left: 30px;
+	margin-top: 20px;
+	position: relative;
+	z-index: 999;
+	background-color: transparent;
+}
+
+.login input[type=submit],.sign_up input[type=submit],.ask_question input[type=submit]
+	{
+	color: #000000;
+	width: 25%;
+	font-size: 16px;
+	font-weight: bold;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	background: url('../material/primary-button.png') repear-x 0 0 #93a445;
+	padding: 7px 15px 6px 15px;
+	border: 1px solid #93a533;
+	cursor: pointer;
+	border-radius: 5px;
+	dislay: inline-block;
+	line-height: normal;
+}
+
+.login input[type=submit],.sign_up input[type=submit] {
+	margin-left: 27%;
+}
+
+.ask_question input[type=submit] {
+	margin-left: 30%;
+	margin-top: 125px;
+}
+
+.sign_up .confirm_password {
+	height: 32px;
+	width: 80%;
+	float: left;
+	margin-left: 30px;
+	margin-top: 20px;
+	position: relative;
+	z-index: 999;
+	background-color: transparent;
+	margin-top: 30px;
+}
+
+.confirm_password input[type='password'] {
+	margin-left: 3px;
+}
