@@ -17,7 +17,7 @@ function validate_user($username, $password) {
 	$result->execute ();
 	$user = $result->fetch ( PDO::FETCH_ASSOC );
 	if ($user == null) {
-		echo "用户名不存在！";
+		echo "incorrect username!";
 		return;
 	}
 	$password = md5($password);
@@ -26,10 +26,10 @@ function validate_user($username, $password) {
 	$result->execute ();
 	$user = $result->fetch ( PDO::FETCH_ASSOC );
 	if ($user == null) {
-		echo "密码错误！";
+		echo "incorrect password!";
 		return;
 	}
-	echo "登录成功!";
+	echo "login success!";
 	return $user;
 }
 ?>
