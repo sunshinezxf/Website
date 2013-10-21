@@ -1,5 +1,5 @@
-<?php 
-session_start();
+<?php
+session_start ();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,6 +11,8 @@ session_start();
 <title>Sunshine--login</title>
 <link rel="shortcut icon" href="../material/logo.ico" />
 <link rel="stylesheet" type="text/css" href="../css/core.css" />
+<script type="text/javascript" src="../javascript/ajax.js"></script>
+<script type="text/javascript" src="../javascript/validate.js"></script>
 </head>
 <body>
 	<div class="homepage">
@@ -32,7 +34,7 @@ session_start();
 				<hr />
 				<form action="../database/login_process.php" method="post">
 					<div class="username">
-						<label>用户名：</label> <input type="text" name="username" />
+						<label>用户名：</label> <input type="text" name="username" onchange="" />
 					</div>
 					<div class="password">
 						<label>密码：</label> <input type="password" name="password" />
