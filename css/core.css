@@ -4,6 +4,7 @@
 html {
 	background-size: 100% 100%;
 	background: url('../material/bg.jpg') no-repeat;
+	background-attachment: fixed;
 }
 
 b {
@@ -159,7 +160,7 @@ div .row {
 	background-color: transparent;
 }
 
-.login,.sign_up,.ask_question {
+.login,.sign_up,.ask_question,.display {
 	overflow: hidden;
 	margin: 50px auto 20px auto;
 	background-color: transparent;
@@ -171,6 +172,12 @@ div .row {
 		color-stop(1, #ffffcc));
 	color: #000000;
 	padding: 15px;
+}
+
+.display {
+	width: 900px;
+	height: 100px;
+	margin-bottom: -25px;
 }
 
 .login {
