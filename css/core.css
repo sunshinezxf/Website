@@ -102,14 +102,14 @@ div .row {
 	color: #ffffcc;
 }
 
-.profile-bar a,.primary-bar a:visited {
+.profile-bar a,.profile-bar a:visited {
 	color: #ffffff;
 	padding: 0 20px 0 10px;
 	font-size: 16px;
 	font-weight: bold;
 }
 
-.profile-bar a:hover,.primary-bar a:visited:hover {
+.profile-bar a:hover,.profile-bar a:visited:hover {
 	color: #ffffff;
 	background: #583e7d;
 	padding: 8px 10px;
