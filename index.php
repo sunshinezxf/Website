@@ -27,6 +27,10 @@ session_start ();
 				</div>
 			</div>
 		</div>
+		<div class="module display">问题一</div>
+		<div class="module display">问题二</div>
+		<div class="module display">问题三</div>
+		<div class="module display">问题四</div>
 	</div>
 </body>
 </html>
