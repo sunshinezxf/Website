@@ -347,11 +347,21 @@ div .row {
 	margin-left: 3px;
 }
 
+.main-footer {
+	width: 100%;
+	margin-left: -8px;
+	background-color: transparent;
+	margin-top: 45px;
+}
+
 .footer {
-	background-color: #3A4951;
+	margin: -8px -8px 0 0;
+	background-color: #ffffcc;
 	text-align: center;
 	font-weight: normal;
-	font-size: 16px;
-	line-height: 20px;
+	font-size: 13px;
+	line-height: 35px;
+	height: 35px;
 	position: relative;
+	margin-bottom: 10px;
 }
