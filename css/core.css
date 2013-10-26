@@ -66,7 +66,6 @@ div .row {
 
 .profile-bar {
 	margin: -8px -8px 0 0;
-	font-weight: bold;
 	background-color: #3A4951;
 	text-align: left;
 	font-weight: normal;
@@ -74,7 +73,6 @@ div .row {
 	line-height: 45px;
 	height: 45px;
 	position: relative;
-	line-height: 45px;
 }
 
 .profile-bar .grid-layout {
@@ -347,4 +345,13 @@ div .row {
 
 .confirm_password input[type='password'] {
 	margin-left: 3px;
+}
+
+.footer {
+	background-color: #3A4951;
+	text-align: center;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 20px;
+	position: relative;
 }
