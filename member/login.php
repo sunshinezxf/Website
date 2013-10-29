@@ -35,9 +35,11 @@ session_start ();
 				<form action="../database/login_process.php" method="post">
 					<div class="username">
 						<label>用户名：</label> <input type="text" name="username" onchange="" />
+						<span id="usernmae_span"></span>
 					</div>
 					<div class="password">
-						<label>密码：</label> <input type="password" name="password" />
+						<label>密码：</label> <input type="password" name="password" /> <span
+							id="password_span"></span>
 					</div>
 					<div class="button">
 						<input type="submit" name="login" value="登陆" />
@@ -46,7 +48,7 @@ session_start ();
 			</div>
 		</div>
 		<div class="main-footer">
-			<div class="row footer">&copy;  Sunshine&#8482;,&nbsp;2013</div>
+			<div class="row footer">&copy; Sunshine&#8482;,&nbsp;2013</div>
 		</div>
 	</div>
 </body>
