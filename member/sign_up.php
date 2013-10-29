@@ -35,13 +35,16 @@ session_start ();
 				<form action="../database/sign_up_process.php" method="post">
 					<div class="username">
 						<label>用户名：</label> <input type="text" name="username"
-							onchange="legal_username(this.form.username.value)" />
+							onchange="legal_username(this.form.username.value)" /> <span
+							id="username_span"></span>
 					</div>
 					<div class="password">
-						<label>密码：</label> <input type="password" name="password" />
+						<label>密码：</label> <input type="password" name="password" /> <span
+							id="password_span"></span>
 					</div>
 					<div class="confirm_password">
-						<label>确认密码：</label><input type="password" />
+						<label>确认密码：</label><input type="password" /> <span
+							id="confirm_password_span"></span>
 					</div>
 					<div class="button">
 						<input type="submit" name="sign_up" value="注册" />
