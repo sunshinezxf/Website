@@ -16,7 +16,6 @@ if (window.XMLHttpRequest) {
 		}
 	}
 }
-
 // alert if the object cannot be created
 if (!ajax) {
 	alert('Some page functionality is unavailable.');

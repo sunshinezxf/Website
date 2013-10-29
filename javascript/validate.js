@@ -7,7 +7,17 @@ function legal_username(username) {
 /*connect to database to check whether username exists*/
 function check_username(username) {
 	if (ajax) {
+		ajax.onreadystatechange = handle_check_username;
 		ajax.open('GET', '../database/sign_up_process.php?username='
-				+ encodeURIComponent(username));
+				+ encodeURIComponent(username), true);
+		
+		ajax.send();
 	}
 }
+
+function handle_check_username() {
+	if((ajax.readyState == 4) && ajax.status == 200){
+		document.write("response text");
+	}
+}
+
