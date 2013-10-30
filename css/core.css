@@ -22,6 +22,13 @@ body {
 	background-color: transparent;
 }
 
+nav {
+	float: right;
+	margin-right: 5%;
+	width: 30%;
+	height: 45px;
+}
+
 menu,ul {
 	border: 0;
 	font-size: 100%;
@@ -42,6 +49,7 @@ ul {
 	margin: 0 auto;
 	position: relative;
 	background-color: transparent;
+	position: relative;
 }
 
 div .row {
@@ -76,12 +84,12 @@ div .row {
 }
 
 .profile-bar .grid-layout {
-	margin-bottom: 55px;
+	margin-bottom: 5px;
 	background-color: transparent;
 }
 
 .profile-bar .row {
-	height: 50px;
+	height: 45px;
 	padding: 0;
 	border-bottom: none;
 }
@@ -89,11 +97,21 @@ div .row {
 .profile-bar ul {
 	float: right;
 	margin: 0 -4px 0 0;
+	height: 45px;
 }
 
 .profile-bar li {
 	padding-left: 10px;
 	float: left;
+	width: 65px;
+}
+
+.profile-bar li a {
+	width: 65px;
+}
+
+.profile-bar li a:hover {
+	width: 65px;
 }
 
 .profile-bar li span {
@@ -102,7 +120,7 @@ div .row {
 
 .profile-bar a,.profile-bar a:visited {
 	color: #ffffff;
-	padding: 0 20px 0 10px;
+	padding: 0 10px 0 10px;
 	font-size: 16px;
 	font-weight: bold;
 }
@@ -128,25 +146,23 @@ div .row {
 	z-index: 1000;
 }
 
-.profile-bar .row {
-	height: 50px;
-	padding: 0;
-	border-bottom: none;
-}
-
 .profile-bar a {
 	text-decoration: none;
+	margin-left: 5%;
+}
+
+.profile-bar a:hover {
+	text-decoration: none;
+	margin-left: 5%;
 }
 
 .profile-bar a .title {
-	margin-left: 10px;
 	padding: 0;
 	position: left;
 }
 
 .profile-bar a .title:hover {
 	background-color: transparent;
-	margin-left: 0;
 	padding: 0;
 }
 
