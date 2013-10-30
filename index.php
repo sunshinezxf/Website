@@ -23,12 +23,13 @@ session_start ();
 					<nav>
 						<ul>
 							<li><a href="./member/sign_up.php">注册</a></li>
-							<li><a href="./member/login.php">登录</a></li>
+							<li><a href="./member/login.php">登陆</a></li>
 							<li><a href="./member/ask_question.php">提问</a></li>
 						</ul>
 					</nav>
 				</div>
 				<div class="module grid-layout content">
+					<div class="side_menu"></div>
 					<div class="module display">问题一</div>
 					<div class="module display">问题二</div>
 					<div class="module display">问题三</div>
