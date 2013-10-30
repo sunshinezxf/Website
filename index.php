@@ -17,24 +17,25 @@ session_start ();
 		<div class="main-header">
 			<div class="profile-bar">
 				<div class="menu row grid-layout">
-					<a class="title" href="./index.php">Sunshine尛帆</a>
+					<a class="logo" href="./index.php"> <img alt="logo"
+						src="./material/Logo.jpg" />
+					</a>
 					<nav>
 						<ul>
 							<li><a href="./member/sign_up.php">注册</a></li>
-							<li><a href="./member/login.php">登陆</a></li>
+							<li><a href="./member/login.php">登录</a></li>
 							<li><a href="./member/ask_question.php">提问</a></li>
-							<li><a href="./member/logout.php">退出</a></li>
 						</ul>
 					</nav>
 				</div>
+				<div class="module display">问题一</div>
+				<div class="module display">问题二</div>
+				<div class="module display">问题三</div>
+				<div class="module display">问题四</div>
+				<div class="main-footer">
+					<div class="row footer">&copy; Sunshine&#8482;,&nbsp;2013</div>
+				</div>
 			</div>
-		</div>
-		<div class="module display">问题一</div>
-		<div class="module display">问题二</div>
-		<div class="module display">问题三</div>
-		<div class="module display">问题四</div>
-		<div class="main-footer">
-			<div class="row footer">&copy; Sunshine&#8482;,&nbsp;2013</div>
 		</div>
 	</div>
 </body>

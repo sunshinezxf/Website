@@ -19,12 +19,15 @@ session_start ();
 		<div class="main-header">
 			<div class="profile-bar">
 				<div class="menu row grid-layout">
-					<a class="title" href="../index.php">Sunshine尛帆</a>
-					<ul>
-						<li><a href="./sign_up.php">注册</a></li>
-						<li><a href="./login.php">登陆</a></li>
-						<li><a href="./ask_question.php">我要提问</a></li>
-					</ul>
+					<a class="logo" href="../index.php"><img alt="logo"
+						src="../material/Logo.jpg" /></a>
+					<nav>
+						<ul>
+							<li><a href="./sign_up.php">注册</a></li>
+							<li><a href="./login.php">登陆</a></li>
+							<li><a href="./ask_question.php">提问</a></li>
+						</ul>
+					</nav>
 				</div>
 			</div>
 		</div>
