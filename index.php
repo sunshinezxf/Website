@@ -28,18 +28,20 @@ session_start ();
 						</ul>
 					</nav>
 				</div>
-				<div class="module grid-layout content">
-					<div class="side_menu"></div>
-					<div class="module display">问题一</div>
-					<div class="module display">问题二</div>
-					<div class="module display">问题三</div>
-					<div class="module display">问题四</div>
-				</div>
-				<div class="main-footer">
-					<div class="row footer">&copy; Sunshine&#8482;,&nbsp;2013</div>
-				</div>
 			</div>
 		</div>
+		<div class="module grid-layout content">
+			<div class="side_menu"></div>
+			<div class="module display">问题一</div>
+			<div class="module display">问题二</div>
+			<div class="module display">问题三</div>
+			<div class="module display">问题四</div>
+		</div>
+		<div class="main-footer">
+			<div class="row footer">&copy; Sunshine&#8482;,&nbsp;2013</div>
+		</div>
+
+
 	</div>
 </body>
 </html>
