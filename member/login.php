@@ -23,6 +23,9 @@ session_start ();
 						src="../material/Logo.jpg" /></a>
 					<nav>
 						<ul>
+							<li><div class="search">
+									<input class="search_input" autocomplete="off" /> <a>搜索</a>
+								</div></li>
 							<li><a href="./sign_up.php">注册</a></li>
 							<li><a href="./login.php">登陆</a></li>
 							<li><a href="./ask_question.php">提问</a></li>

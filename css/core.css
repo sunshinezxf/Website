@@ -25,7 +25,7 @@ body {
 nav {
 	float: right;
 	margin-right: 5%;
-	width: 30%;
+	width: 50%;
 	height: 45px;
 }
 
@@ -140,6 +140,43 @@ div .row {
 	padding-left: 10px;
 }
 
+.search {
+	float: left;
+	margin: 5px 2px 5px 2px;
+	padding: 4px 2px 4px 2px;
+}
+
+.search_input {
+	outline: none;
+	width: 73%;
+	background: #ffffcc;
+	margin: 0;
+	border: none;
+	font-size: 12px;
+	height: 16px;
+	color: #999999;
+	float: left;
+	border-radius: 10px 0 0 10px;
+	padding: 4px 4px 4px 4px;
+}
+
+.search a {
+	text-indent: -9999em;
+	float: left;
+	width: 10%;
+	height: 16px;
+	margin-right: 10px;
+	cursor: pointer;
+	background: url('../material/search_button.png') no-repeat 0 3px #ffffcc;
+	padding: 4px 4px 4px 4px;
+	border-radius: 0 10px 10px 0;
+}
+
+.search a:link,.search a:visited  {
+	color: #ffffcc;
+	text-decoration: none;
+}
+
 .module {
 	border: 1px solid #e1e1e1;
 	border-radius: 10px;
@@ -151,8 +188,7 @@ div .row {
 .login,.sign_up,.ask_question,.display {
 	overflow: hidden;
 	margin: 50px auto 20px auto;
-	margin-top: 80px;
-	background-color: transparent;
+	margin-top: 80px; background-color : transparent;
 	background-image: -o-linear-gradient(left, #ffffcc 0%, #ffffcc 100%);
 	background-image: -moz-linear-gradient(left, #ffffcc 0%, #ffffcc 100%);
 	background-image: -webkit-linear-gradient(left, #faebdf 0%, #faebdf 100%);
@@ -162,6 +198,7 @@ div .row {
 	color: #000000;
 	padding: 15px;
 	opacity: 0.85;
+	background-color: transparent;
 }
 
 .content {
