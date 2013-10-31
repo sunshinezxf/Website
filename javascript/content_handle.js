@@ -1,0 +1,1 @@
+/*fetch content from the server and display it to html*/
