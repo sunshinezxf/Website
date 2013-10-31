@@ -37,9 +37,8 @@ session_start ();
 				<hr />
 				<form action="../database/sign_up_process.php" method="post">
 					<div class="username">
-						<label>用户名：</label> <input type="text" name="username"
-							onchange="legal_username(this.form.username.value)" /> <span
-							id="username_span"></span>
+						<label>用户名：</label> <input type="text" id="username"
+							onchange="prompt_username()" /> <span id="username_span"></span>
 					</div>
 					<div class="password">
 						<label>密码：</label> <input type="password" name="password" /> <span
