@@ -5,7 +5,7 @@ function prompt_username() {
 	if (legal_username(username)) {
 		username_prompt.innerHTML = "<img src=\"../material/ok.jpg\" alt=\"ok\" />";
 	} else {
-		username_prompt.innerHTML = "<img src=\"../material/warning.jpg\" alt=\"warning\">";
+		username_prompt.innerHTML = "<img src=\"../material/warning.jpg\" alt=\"warning\" />";
 	}
 
 }
