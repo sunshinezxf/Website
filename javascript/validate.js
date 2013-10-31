@@ -1,3 +1,4 @@
+/*determine whether the username is within legal limitation*/
 function prompt_username() {
 	var username = document.getElementById("username").value;
 	var username_prompt = document.getElementById("username_span");
@@ -13,6 +14,11 @@ function prompt_username() {
 function legal_username(username) {
 	var username_pattern = new RegExp("^[a-zA-Z][a-zA-Z0-9_]+$");
 	return username_pattern.test(username);
+}
+
+/* regiter password should be confirmed twice*/
+function same_password(password_1, password_2) {
+	return true;
 }
 
 /* connect to database to check whether username exists */
