@@ -41,12 +41,12 @@ session_start ();
 							onchange="prompt_username()" /> <span id="username_span"></span>
 					</div>
 					<div class="password">
-						<label>密码：</label> <input type="password" name="password" /> <span
-							id="password_span"></span>
+						<label>密码：</label> <input type="password" id="password"
+							onchange="prompt_password()" /> <span id="password_span"></span>
 					</div>
 					<div class="confirm_password">
-						<label>确认密码：</label><input type="password" /> <span
-							id="confirm_password_span"></span>
+						<label>确认密码：</label><input type="password" id="confirm_password"
+							onchange="same_password()" /> <span id="confirm_password_span"></span>
 					</div>
 					<div class="button">
 						<input type="submit" name="sign_up" value="注册" />
