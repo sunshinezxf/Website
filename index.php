@@ -11,6 +11,7 @@ session_start ();
 <title>Sunshine</title>
 <link rel="shortcut icon" href="./material/logo.ico" />
 <link rel="stylesheet" type="text/css" href="./css/core.css" />
+<script type="text/javascript" src="javascript/jquery.js"></script>
 </head>
 <body>
 	<div class="homepage">
