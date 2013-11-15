@@ -8,6 +8,8 @@ if (isset ( $_POST ['username'] ) && isset ( $_POST ['password'] )) {
 	if ($user != null) {
 		$_SESSION ['username'] = $user ['u_username'];
 		$_SESSION ['password'] = $user ['u_password'];
+		echo "<script>window.alert(\"登录成功\")</script>";
+		echo "<script>window.location.href=\"../index.php\"</script>";
 	}
 }
 function validate_user($username, $password) {
@@ -30,7 +32,7 @@ function validate_user($username, $password) {
 	) );
 	$user = $result->fetch ( PDO::FETCH_ASSOC );
 	if ($user == null) {
-		return  "密码错误！";
+		return "密码错误！";
 	}
 	return $user;
 }
