@@ -24,8 +24,7 @@ function sign_user($username, $password) {
 			':u_username' => $username,
 			':u_password' => $password 
 	) );
-	$row = $result->rowCount ();
-	return ($row == 0) ? "注册失败" : "注册成功";
+	echo "<script>window.location.href=\"../member/login.php\"</script>";
 }
 
 ?>
