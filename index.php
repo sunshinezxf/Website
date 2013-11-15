@@ -27,14 +27,14 @@ session_start ();
 									<input class="search_input" autocomplete="off" /> <a>搜索</a>
 								</div></li>
 								<?php
-								if (isset ( $_SESSION ['username'] )) {
+								if (!isset ( $_SESSION ['username'] )) {
 									?>
 									<li><a href="./member/sign_up.php">注册</a></li>
 							<li><a href="./member/login.php">登陆</a></li>
 								<?php
 								} else {
 									?>
-									<li><a><?php $_SESSION['username']?></a></li>
+									<li><a><?php echo $_SESSION['username']?></a></li>
 									<?php
 								}
 								?>

@@ -1,6 +1,7 @@
 <?php
 header ( "Content-type: text/html; charset=utf-8" );
 include_once './connect.php';
+session_start();
 if (isset ( $_POST ['username'] ) && isset ( $_POST ['password'] )) {
 	$username = $_POST ['username'];
 	$password = $_POST ['password'];
