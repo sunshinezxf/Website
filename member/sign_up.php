@@ -41,11 +41,13 @@ session_start ();
 				<form action="../database/sign_up_process.php" method="post">
 					<div class="username">
 						<label>用户名：</label> <input type="text" id="username"
-							onchange="prompt_username()" /> <span id="username_span"></span>
+							name="username" onchange="prompt_username()" /> <span
+							id="username_span"></span>
 					</div>
 					<div class="password">
 						<label>密码：</label> <input type="password" id="password"
-							onchange="prompt_password()" /> <span id="password_span"></span>
+							name="password" onchange="prompt_password()" /> <span
+							id="password_span"></span>
 					</div>
 					<div class="confirm_password">
 						<label>确认密码：</label><input type="password" id="confirm_password"

@@ -46,6 +46,13 @@ function same_password() {
 	}
 }
 
+/* sign up new user*/
+function sign_up() {
+	var username = document.getElementById("username").value;
+	var password = document.getElementById("password").value;
+	document.write(username);
+}
+
 /* connect to database to check whether username exists */
 function check_username(username) {
 	if (ajax) {
