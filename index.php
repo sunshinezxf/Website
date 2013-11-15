@@ -26,8 +26,18 @@ session_start ();
 							<li><div class="search">
 									<input class="search_input" autocomplete="off" /> <a>搜索</a>
 								</div></li>
-							<li><a href="./member/sign_up.php">注册</a></li>
+								<?php
+								if (isset ( $_SESSION ['username'] )) {
+									?>
+									<li><a href="./member/sign_up.php">注册</a></li>
 							<li><a href="./member/login.php">登陆</a></li>
+								<?php
+								} else {
+									?>
+									<li><a><?php $_SESSION['username']?></a></li>
+									<?php
+								}
+								?>
 							<li><a href="./member/ask_question.php">提问</a></li>
 						</ul>
 					</nav>
