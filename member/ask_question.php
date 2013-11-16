@@ -49,21 +49,23 @@ if (! isset ( $_SESSION ['username'] ) && ! isset ( $_SESSION ['password'] )) {
 			<div class="module ask_question">
 				<b>提出问题</b>
 				<hr />
-				<div class="caption">
-					<label>标题：</label><input type="text" name="title" />
-				</div>
-				<div class="category">
-					<label>分类：</label><input type="text" name="category" />
-				</div>
-				<div class="description">
-					<label>问题描述：</label>
-					<div>
-						<textarea rows="6"></textarea>
+				<form action="../database/ask_question_process.php" method="post">
+					<div class="caption">
+						<label>标题：</label><input type="text" name="question_title" />
 					</div>
-				</div>
-				<div class="button">
-					<input type="submit" name="publish" value="发表" />
-				</div>
+					<div class="category">
+						<label>分类：</label><input type="text" name="question_category" />
+					</div>
+					<div class="description">
+						<label>问题描述：</label>
+						<div>
+							<textarea rows="6" name="question_description"></textarea>
+						</div>
+					</div>
+					<div class="button">
+						<input type="submit" name="publish" value="发表" />
+					</div>
+				</form>
 			</div>
 		</div>
 		<div class="main-footer">
