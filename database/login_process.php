@@ -1,7 +1,7 @@
 <?php
 header ( "Content-type: text/html; charset=utf-8" );
 include_once './connect.php';
-session_start();
+session_start ();
 if (isset ( $_POST ['username'] ) && isset ( $_POST ['password'] )) {
 	$username = $_POST ['username'];
 	$password = $_POST ['password'];
@@ -9,7 +9,6 @@ if (isset ( $_POST ['username'] ) && isset ( $_POST ['password'] )) {
 	if ($user != null) {
 		$_SESSION ['username'] = $user ['u_username'];
 		$_SESSION ['password'] = $user ['u_password'];
-		echo "<script>window.prompt(\"登录成功\")</script>";
 		echo "<script>window.location.href=\"../index.php\"</script>";
 	}
 }
