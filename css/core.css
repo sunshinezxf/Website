@@ -29,7 +29,7 @@ nav {
 	height: 45px;
 }
 
-menu,ul,li,a, h3 {
+menu,ul,li,a,h3 {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
@@ -207,7 +207,7 @@ div .row {
 	background-color: transparent;
 }
 
-.display  {
+.display {
 	boder-bottom: 1px solid;
 }
 
@@ -225,8 +225,16 @@ div .row {
 	cursor: pointer;
 }
 
-.question_title a:visited {
-	#4A6B83;
+.question_title a:visited { #4A6B83;
+	
+}
+
+.question_content {
+	padding: 0 5px;
+	width: 750px;
+	display: table-cell;
+	vertical-align: middle;
+	height: 44px;
 }
 
 .content {
@@ -401,8 +409,8 @@ div .row {
 }
 
 .ask_question input[type=file] {
-	width: 50%;
-	margin-left: 25%;
+	width: 55%;
+	margin-left: 22%;
 	margin-top: 28%;
 }
 
