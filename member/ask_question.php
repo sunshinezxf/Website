@@ -62,6 +62,9 @@ if (! isset ( $_SESSION ['username'] ) && ! isset ( $_SESSION ['password'] )) {
 							<textarea rows="6" name="question_description"></textarea>
 						</div>
 					</div>
+					<div class="picture">
+						<input type="file" name="选择图片" />
+					</div>
 					<div class="button">
 						<input type="submit" name="publish" value="发表" />
 					</div>
