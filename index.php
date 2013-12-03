@@ -52,6 +52,7 @@ session_start ();
 					<h3>
 						<a href="#">wenti</a>
 					</h3>
+					<br />
 					<div class="question_content">
 						<div>I have a game with like 100 draw calls. But all i have on
 							scene is my background(which is made from 100 gameobjects with
