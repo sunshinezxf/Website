@@ -63,7 +63,7 @@ if (! isset ( $_SESSION ['username'] ) && ! isset ( $_SESSION ['password'] )) {
 						</div>
 					</div>
 					<div class="picture">
-						<input type="file" name="选择图片" />
+						<input type="file" name="select" />
 					</div>
 					<div class="button">
 						<input type="submit" name="publish" value="发表" />

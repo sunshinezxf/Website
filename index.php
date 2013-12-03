@@ -47,7 +47,13 @@ session_start ();
 		</div>
 		<div class="module grid-layout content">
 			<div class="side_menu"></div>
-			<div class="module display">问题一</div>
+			<div class="module display">
+				<div class="summary">
+					<h3>
+						<a href="#">wenti</a>
+					</h3>
+				</div>
+			</div>
 			<div class="module display">问题二</div>
 			<div class="module display">问题三</div>
 			<div class="module display">问题四</div>
