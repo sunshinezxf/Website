@@ -49,7 +49,7 @@ if (! isset ( $_SESSION ['username'] ) && ! isset ( $_SESSION ['password'] )) {
 			<div class="module ask_question">
 				<b>提出问题</b>
 				<hr />
-				<form action="../database/ask_question_process.php" method="post">
+				<form action="../database/ask_question_process.php" method="post" enctype="multipart/form-data">
 					<div class="caption">
 						<label>标题：</label><input type="text" name="question_title" />
 					</div>
@@ -63,7 +63,7 @@ if (! isset ( $_SESSION ['username'] ) && ! isset ( $_SESSION ['password'] )) {
 						</div>
 					</div>
 					<div class="picture">
-						<input type="file" name="select" />
+						<input type="file" name="picture" value="" />
 					</div>
 					<div class="button">
 						<input type="submit" name="publish" value="发表" />
