@@ -277,7 +277,8 @@ div .row {
 	border-radius: 5px;
 }
 
-.side_menu .tag a, .side_menu .tag a:hover, .side_menu .tag a:link, .side_menu .tag a:visited {
+.side_menu .tag a,.side_menu .tag a:hover,.side_menu .tag a:link,.side_menu .tag a:visited
+	{
 	color: #ABCDEF;
 }
 
@@ -480,7 +481,6 @@ div .row {
 }
 
 .tag {
-	width: 35px;
 	height: 20px;
 	text-align: center;
 	baseline: vertical;
@@ -491,7 +491,7 @@ div .row {
 	color: #3E6D8E;
 	font-size: 16px;
 	margin: 2px 2px 2px 10px;
-	margin-left: padding:                   2px 4px;
+	padding: 2px 4px;
 	text-decoration: none;
 	white-space: nowrap;
 	background-color: #E0EAF1;

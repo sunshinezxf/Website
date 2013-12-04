@@ -38,7 +38,8 @@ function upload_picture($question_file, $question_username, $question_file_tmp) 
 	$type = array (
 			"jpg",
 			"gif",
-			"png" 
+			"png",
+			"jpeg" 
 	);
 	$adjust = strtolower ( get_suffix ( $question_file ) );
 	if (in_array ( strtolower ( get_suffix ( $question_file ) ), $type )) {
