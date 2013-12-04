@@ -32,10 +32,12 @@ while ( true ) {
 		echo "<div class=\"display module\">";
 		echo "<div class=\"summary\">";
 		echo "<h3>";
-		echo "<a href=\"#\">" . $question->_get_question_title () . "</a>";
+		echo "<a href=\"#\">" . $question->get_question_title () . "</a>";
+		echo "<a class=\"tag\">" . $question->get_question_category () . "</a>";
 		echo "</h3>";
 		echo "<div class=\"question_content\">";
-		echo "<div>" . $question->_get_question_description () . "</div>";
+		echo "<div>" . $question->get_question_description () . "</div>";
+		echo "<img class=\"show\" src=\"" . $question->get_question_path () . "\" />";
 		echo "</div>";
 		echo "</div>";
 		echo "</div>";

@@ -14,23 +14,23 @@ class question {
 		$this->question_username = $question_username;
 		$this->question_path = $question_path;
 	}
-	public function _get_question_id() {
+	public function get_question_id() {
 		return $this->question_id;
 	}
-	public function _get_question_title() {
+	public function get_question_title() {
 		return $this->question_title;
 	}
-	public function _get_question_category() {
+	public function get_question_category() {
 		return $this->question_category;
 	}
-	public function _get_question_description() {
+	public function get_question_description() {
 		return $this->question_description;
 	}
-	public function _get_question_username() {
+	public function get_question_username() {
 		return $this->question_username;
 	}
-	public function _get_question_path() {
-		$this->question_path = str_replace ( "D:/Programming/PHP/Appserv/www", "..", $this->question_path );
+	public function get_question_path() {
+		$this->question_path = str_replace ( "D:/Programming/PHP/Appserv/www/Website", "..", $this->question_path );
 		return $this->question_path;
 	}
 }
