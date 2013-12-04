@@ -4,7 +4,7 @@ session_start ();
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
+<meta charset="utf-8" />
 <meta name="keywords" content="技术问答 技术问答网站" />
 <meta name="description" content="技术问答首页" />
 <meta name="viewport" content="maximum-scale=1.0" />
