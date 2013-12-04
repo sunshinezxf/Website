@@ -1,4 +1,5 @@
 <?php
+include_once '../object/question.class.php';
 include_once './connect.php';
 ?>
 <!DOCTYPE html>
@@ -21,18 +22,20 @@ while ( true ) {
 		return;
 	} else {
 		$question_id = $temp ['q_id'];
-		$question_tile = $temp ['q_title'];
+		$question_title = $temp ['q_title'];
 		$question_category = $temp ['q_category'];
 		$question_description = $temp ['q_description'];
-		$q_path = $temp ['q_path'];
+		$question_username = $temp ['q_username'];
+		$question_path = $temp ['q_path'];
+		$question = new question ( $question_id, $question_title, $question_category, $question_description, $question_username, $question_path );
 		
 		echo "<div class=\"display module\">";
 		echo "<div class=\"summary\">";
 		echo "<h3>";
-		echo "<a href=\"#\">" . $question_tile . "</a>";
+		echo "<a href=\"#\">" . $question->_get_question_title () . "</a>";
 		echo "</h3>";
 		echo "<div class=\"question_content\">";
-		echo "<div>" . $question_description . "</div>";
+		echo "<div>" . $question->_get_question_description () . "</div>";
 		echo "</div>";
 		echo "</div>";
 		echo "</div>";
