@@ -1,5 +1,6 @@
 <?php
 session_start ();
+include_once './database/get_tag.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -46,10 +47,22 @@ session_start ();
 			</div>
 		</div>
 		<div class="module grid-layout content">
-			<div class="side_menu"></div>
-			<iframe class="question_display module" src="./database/content.php">
-			</iframe>
 
+			<div class="side_menu">
+				<div class="tag">
+					<a href="./database/content.php" target="content">全部</a>
+				</div>
+			<?php
+			$tag_array = get_tag ();
+			for($i = 0; $i < count ( $tag_array ); $i ++) {
+				echo "<div class=\"tag\">";
+				echo "<a>" . $tag_array [$i] . "</a>";
+				echo "</div>";
+			}
+			?>
+			</div>
+			<iframe class="question_display module" src="./database/content.php" name="content">
+			</iframe>
 		</div>
 		<div class="main-footer">
 			<div class="row footer">&copy; Sunshine&#8482;,&nbsp;2013</div>

@@ -12,7 +12,7 @@ include_once './connect.php';
 <body>
 <?php
 $connection = connect ();
-$sql = "select * from question";
+$sql = "select * from question order by q_id desc";
 $result = $connection->prepare ( $sql );
 $result->execute ();
 
@@ -37,7 +37,9 @@ while ( true ) {
 		echo "</h3>";
 		echo "<div class=\"question_content\">";
 		echo "<div>" . $question->get_question_description () . "</div>";
-		echo "<img class=\"show\" src=\"" . $question->get_question_path () . "\" />";
+		if ($question_path) {
+			echo "<img class=\"show\" src=\"" . $question->get_question_path () . "\" />";
+		}
 		echo "</div>";
 		echo "</div>";
 		echo "</div>";
