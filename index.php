@@ -61,8 +61,8 @@ include_once './database/get_tag.php';
 			}
 			?>
 			</div>
-			<iframe class="question_display module" src="./database/content.php" name="content">
-			</iframe>
+			<iframe class="question_display module" src="./database/content.php"
+				name="content"> </iframe>
 		</div>
 		<div class="main-footer">
 			<div class="row footer">&copy; Sunshine&#8482;,&nbsp;2013</div>
