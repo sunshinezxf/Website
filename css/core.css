@@ -82,6 +82,12 @@ img {
 	height: 40px;
 }
 
+.like {
+	padding-left: 65%;
+	height: 25px;
+	width: 25px;
+}
+
 iframe {
 	background-color: transparent;
 }

@@ -40,7 +40,7 @@ while ( true ) {
 		if ($question_path) {
 			echo "<img class=\"show\" src=\"" . $question->get_question_path () . "\" />";
 		}
-		echo "<img src=\"../material/zan.jpg\" />";
+		echo "<img class=\"like\" src=\"../material/like.jpg\" />";
 		echo "</div>";
 		echo "</div>";
 		echo "</div>";
