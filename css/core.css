@@ -77,6 +77,10 @@ img {
 	vertical-align: baseline;
 }
 
+iframe {
+	background-color: transparent;
+}
+
 .grid-layout {
 	width: 976px;
 	margin: 0 auto;
@@ -243,13 +247,14 @@ div .row {
 }
 
 .side_menu {
-	margin-top: 10px;
+	border-radius: 5px 5px 5px 5px; margin-top : 10px;
 	width: 15%;
-	height: 739px;
+	height: 730px;
 	float: right;
 	background-color: #e1e1e1;
 	position: relative;
 	opacity: 0.8;
+	margin-top: 10px;
 }
 
 #username_span {
@@ -258,7 +263,6 @@ div .row {
 
 .display {
 	width: 80%;
-	height: 90px;
 	margin-top: 10px;
 	margin-left: 1%;
 }
@@ -437,6 +441,11 @@ div .row {
 
 .confirm_password input[type='password'] {
 	margin-left: 3px;
+}
+
+.question_display {
+	width: 81%;
+	height: 700px;
 }
 
 .main-footer {

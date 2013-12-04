@@ -47,26 +47,8 @@ session_start ();
 		</div>
 		<div class="module grid-layout content">
 			<div class="side_menu"></div>
-			<div class="module display">
-				<div class="summary">
-					<h3>
-						<a href="#">wenti</a>
-					</h3>
-					<br />
-					<div class="question_content">
-						<div>I have a game with like 100 draw calls. But all i have on
-							scene is my background(which is made from 100 gameobjects with
-							spriterenderer and collider). I don't get why those are not
-							batched. I use the same settings for them all. All I change is
-							sprite, othervise totaly the same objects. Any idea what i'm
-							doing wrong?</div>
-					</div>
-				</div>
-			</div>
-			<div class="module display">问题二</div>
-			<div class="module display">问题三</div>
-			<div class="module display">问题四</div>
-			<div class="module display">问题五</div>
+			<iframe class="question_display module" src="./database/content.php">
+			</iframe>
 
 		</div>
 		<div class="main-footer">
