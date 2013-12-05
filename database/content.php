@@ -38,7 +38,7 @@ while ( true ) {
 		echo "<div class=\"question_content\">";
 		echo "<div>" . $question->get_question_description () . "</div>";
 		if ($question_path) {
-			echo "<img class=\"show\" src=\"" . $question->get_question_path () . "\" />";
+			echo "<img class=\"show\" src=\"../" . $question->get_question_path () . "\" />";
 		}
 		echo "<img class=\"like\" src=\"../material/like.jpg\" />";
 		echo "</div>";

@@ -1,18 +1,16 @@
 <?php
 header ( "Content-type: text/html; charset=utf-8" );
 include_once './connect.php';
-session_start ();
+include_once '../object/question.class.php';
 ?>
-<?php
-
-echo "<!DOCTYPE html>";
-echo "<html lang=\"en\">";
-echo "<head>";
-echo "<meta charset=\"utf-8\" />";
-echo "<link rel=\"stylesheet\" type=\"text/css\" href=\"../css/core.css\" />";
-echo "<title>content</title>";
-echo "</head>";
-echo "<body>";
+<!DOCTYPE html>
+<html lang="en" style="background: transparent;">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="./css/core.css" />
+<title>content</title>
+</head>
+<?php 
 $type = $_GET ['tag'];
 $connection = connect ();
 $sql = "select * from question where q_category=:q_category order by q_id desc";
@@ -23,7 +21,7 @@ $result->execute ( array (
 while ( true ) {
 	$temp = $result->fetch ( PDO::FETCH_ASSOC );
 	if ($temp == null) {
-		return;
+		break;
 	} else {
 		$question_id = $temp ['q_id'];
 		$question_title = $temp ['q_title'];
@@ -42,16 +40,16 @@ while ( true ) {
 		echo "<div class=\"question_content\">";
 		echo "<div>" . $question->get_question_description () . "</div>";
 		if ($question_path) {
-			echo "<img class=\"show\" src=\"" . $question->get_question_path () . "\" />";
+			echo "<img class=\"show\" src=\"./" . $question->get_question_path () . "\" />";
 		}
-		echo "<img class=\"like\" src=\"../material/like.jpg\" />";
+		echo "<img class=\"like\" src=\"./material/like.jpg\" />";
 		echo "</div>";
 		echo "</div>";
 		echo "</div>";
 	}
 }
-echo "</body>";
-echo "</html>";
 ?>
+</body>
+</html>
 
 

@@ -30,7 +30,7 @@ class question {
 		return $this->question_username;
 	}
 	public function get_question_path() {
-		$this->question_path = str_replace ( "D:/Programming/PHP/Appserv/www/Website", "..", $this->question_path );
+		$this->question_path = str_replace ( "D:/Programming/PHP/Appserv/www/Website", "", $this->question_path );
 		return $this->question_path;
 	}
 }

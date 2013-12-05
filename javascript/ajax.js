@@ -74,18 +74,18 @@ function handleStateChange() {
 
 function specifyQuestion(tag) {
 	var ajax = initAjax();
-	// debugger;
 	if (!ajax) {
 		alert("浏览器不支持ajax!");
 		return;
 	}
-	var url = "../Website/database/specify_content.php?tag=" + tag;
+	var url = "./database/specify_content.php?tag=" + encodeURIComponent(tag);
 	ajax.open("GET", url, true);
 	ajax.onreadystatechange = function() {
 		if (ajax.readyState == 4) {
 			if (ajax.status == 200) {
-				var content = document.getElementById("content");
-				content.src = ajax.responseText;
+				var content = window.frames[0];
+				content.document.body.innerText = "";
+				content.document.write(ajax.responseText);
 			}
 		}
 	};
