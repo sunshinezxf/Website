@@ -503,6 +503,7 @@ div .row {
 }
 
 .question_detail {
+	width: 50%;
 	background-color: #ffffcc;
 	text-align: center;
 	font-weight: bold;
@@ -530,9 +531,9 @@ div .row {
 }
 
 .question_detail .description {
-	margin-top: 10px;
-	margin-left: 2%;
-	margin-right: 2%;
+	margin-top: 20px;
+	margin-left: 10%;
+	margin-right: 10%;
 	font-weight: normal;
 	font-size: 16px;
 	text-align: left;

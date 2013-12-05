@@ -10,7 +10,7 @@ include_once '../object/question.class.php';
 <link rel="stylesheet" type="text/css" href="./css/core.css" />
 <title>content</title>
 </head>
-<?php 
+<?php
 $type = $_GET ['tag'];
 $connection = connect ();
 $sql = "select * from question where q_category=:q_category order by q_id desc";
@@ -34,7 +34,8 @@ while ( true ) {
 		echo "<div class=\"display module\">";
 		echo "<div class=\"summary\">";
 		echo "<h3>";
-		echo "<a href=\"./member/browse_question_detail.php?q_id=\"".urlencode($question_id)." target=\"_blank\">" . $question->get_question_title () . "</a>";
+		echo "<a href=\"./member/browse_question_detail.php?question_id=" . urlencode ( $question_id ) . "\" target=\"_blank\">" . $question->get_question_title () . "</a>";
+		// echo "<a href=\"./member/browse_question_detail.php?q_id=" . urlencode ( $question_id ) . " target=\"_blank\">" . $question->get_question_title () . "</a>";
 		echo "<a class=\"tag\">" . $question->get_question_category () . "</a>";
 		echo "</h3>";
 		echo "<div class=\"question_content\">";
