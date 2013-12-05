@@ -376,6 +376,7 @@ div .row {
 	padding: 7px 8px 6px 8px;
 	outline: none;
 	height: 100%;
+	resize: none;
 }
 
 .login .password,.sign_up .password {
