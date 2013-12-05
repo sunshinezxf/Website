@@ -32,7 +32,7 @@ while ( true ) {
 		echo "<div class=\"display module\">";
 		echo "<div class=\"summary\">";
 		echo "<h3>";
-		echo "<a href=\"#\">" . $question->get_question_title () . "</a>";
+		echo "<a href=\"../member/browse_question_detail.php?question_id=".urlencode($question_id)."\" target=\"_blank\">" . $question->get_question_title () . "</a>";
 		echo "<a class=\"tag\">" . $question->get_question_category () . "</a>";
 		echo "</h3>";
 		echo "<div class=\"question_content\">";
