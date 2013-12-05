@@ -12,8 +12,9 @@ include_once './database/get_tag.php';
 <title>Sunshine</title>
 <link rel="shortcut icon" href="./material/logo.ico" />
 <link rel="stylesheet" type="text/css" href="./css/core.css" />
+<script type="text/javascript" src="javascript/ajax.js"></script>
 <script type="text/javascript" src="javascript/jquery.js"></script>
-<script type="text/javascript" src="ajax.js"></script>
+
 </head>
 <body>
 	<div class="homepage">
@@ -57,7 +58,7 @@ include_once './database/get_tag.php';
 			$tag_array = get_tag ();
 			for($i = 0; $i < count ( $tag_array ); $i ++) {
 				echo "<div class=\"tag\">";
-				echo "<a id=\"" . $tag_array [$i] . "\" href=\"javascript:void(0)\" onclick=\"specifyQuestion(" . $tag_array [$i] . "); return false\">" . $tag_array [$i] . "</a>";
+				echo "<a id=\"" . $tag_array [$i] . "\" href=\"javascript:void(0)\" onclick=\"specifyQuestion('" . $tag_array [$i] . "')\"; return false>" . $tag_array [$i] . "</a>";
 				echo "</div>";
 			}
 			?>

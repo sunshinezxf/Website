@@ -74,22 +74,25 @@ function handleStateChange() {
 
 function specifyQuestion(tag) {
 	var ajax = initAjax();
+	// debugger;
 	if (!ajax) {
 		alert("浏览器不支持ajax!");
 		return;
 	}
-	var url = "../database/specify_content.php?tag=" + tag;
+	var url = "../Website/database/specify_content.php?tag=" + tag;
 	ajax.open("GET", url, true);
-	ajax.onreadystatechange = fillContent;
+	ajax.onreadystatechange = function() {
+		if (ajax.readyState == 4) {
+			if (ajax.status == 200) {
+				var content = document.getElementById("content");
+				content.src = ajax.responseText;
+			}
+		}
+	};
 	ajax.send(null);
 }
-
-function fillContent() {
-	if (ajax.readyState == 4) {
-		if (ajax.status == 200) {
-			var content = document.getElementById("content");
-			content.innerHTML = responseText;
-		}
-	}
-
-}
+/*
+ * function fillContent() { if (ajax.readyState == 4) { if (ajax.status == 200) {
+ * var content = document.getElementByTag("content"); content.src =
+ * responseText; } } }
+ */
