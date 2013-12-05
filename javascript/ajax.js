@@ -24,12 +24,12 @@ function initAjax() {
 function checkUsername() {
 	var username = document.getElementById("username").value;
 	var username_prompt = document.getElementById("username_span");
-	if(!legal_username(username)) {
+	if (!legal_username(username)) {
 		username_prompt.innerHTML = "<img src=\"../material/warning.jpg\" alt=\"warning\" />";
 		return;
 	}
 	var ajax = initAjax();
-	if(!ajax) {
+	if (!ajax) {
 		alert("浏览器不支持ajax!");
 		return;
 	}
@@ -51,7 +51,7 @@ function legal_username(username) {
 
 function signUp() {
 	var ajax = initAjax();
-	if(!ajax) {
+	if (!ajax) {
 		alert("浏览器不支持ajax!");
 		return;
 	}
@@ -60,17 +60,36 @@ function signUp() {
 	data += "username=" + document.getElementById('username').value;
 	data += "password=" + document.getElementById('password').value;
 	ajax.open("POST", url, true);
-	
 }
 
-
 function handleStateChange() {
-	if(ajax.readyState == 4){
-		if(ajax.status == 200) {
+	if (ajax.readyState == 4) {
+		if (ajax.status == 200) {
 			alert("success!");
-		}
-		else{
+		} else {
 			alert("fail");
 		}
 	}
+}
+
+function specifyQuestion(tag) {
+	var ajax = initAjax();
+	if (!ajax) {
+		alert("浏览器不支持ajax!");
+		return;
+	}
+	var url = "../database/specify_content.php?tag=" + tag;
+	ajax.open("GET", url, true);
+	ajax.onreadystatechange = fillContent;
+	ajax.send(null);
+}
+
+function fillContent() {
+	if (ajax.readyState == 4) {
+		if (ajax.status == 200) {
+			var content = document.getElementById("content");
+			content.innerHTML = responseText;
+		}
+	}
+
 }

@@ -56,13 +56,13 @@ include_once './database/get_tag.php';
 			$tag_array = get_tag ();
 			for($i = 0; $i < count ( $tag_array ); $i ++) {
 				echo "<div class=\"tag\">";
-				echo "<a>" . $tag_array [$i] . "</a>";
+				echo "<a id=\"" . $tag_array [$i] . "\" href=\"javascript:void(0)\" onclick=\"specifyQuestion(" . $tag_array [$i] . "); return false\">" . $tag_array [$i] . "</a>";
 				echo "</div>";
 			}
 			?>
 			</div>
 			<iframe class="question_display module" src="./database/content.php"
-				name="content"> </iframe>
+				name="content" id="content"> </iframe>
 		</div>
 		<div class="main-footer">
 			<div class="row footer">&copy; Sunshine&#8482;,&nbsp;2013</div>
