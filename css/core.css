@@ -681,7 +681,7 @@ input[type='number'] {
 	font-size: 16px;
 }
 
-.answer_display .stairs {
+.answer_display .stairs,.message_display .stairs {
 	float: right;
 	text-align: left;
 	font-size: 12px;
