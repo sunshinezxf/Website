@@ -55,7 +55,7 @@ include_once './database/get_tag.php';
 					<a href="./database/content.php" target="content">全部</a>
 				</div>
 				<div class="tag">
-					<a href="./database/get_top_ten_question.php" target="content">TOP
+					<a href="./database/get_top_five_question.php" target="content">TOP
 						5</a>
 				</div>
 			<?php
