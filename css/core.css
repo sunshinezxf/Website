@@ -48,6 +48,12 @@ a {
 	text-decoration: none;
 }
 
+em {
+	font: inherit;
+	color: #abcdef;
+	font-size: 23px;
+}
+
 menu,ul {
 	display: block;
 }
@@ -522,7 +528,7 @@ div .row {
 	float: right;
 	height: 30px;
 	border-radius: 5px;
-	background-color: #E0EAF1;	
+	background-color: #E0EAF1;
 	text-align: center;
 	color: #3e6d8e;
 	font-size: 20px;

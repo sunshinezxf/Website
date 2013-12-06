@@ -91,8 +91,23 @@ function specifyQuestion(tag) {
 	};
 	ajax.send(null);
 }
-/*
- * function fillContent() { if (ajax.readyState == 4) { if (ajax.status == 200) {
- * var content = document.getElementByTag("content"); content.src =
- * responseText; } } }
- */
+
+function like(question_id) {
+	var ajax = initAjax();
+	if (!ajax) {
+		alert("浏览器不支持ajax!");
+		return;
+	}
+	var url = "./like_question.php?q_id=" + encodeURIComponent(question_id);
+	ajax.open("GET", url, true);
+	ajax.onreadystatechange = function() {
+		if (ajax.readyState == 4) {
+			if (ajax.status == 200) {
+				var contentWin = window.top.document.getElementById("content").contentWindow;
+				var text = contentWin.document.getElementById(question_id);
+				text.innerText = "(" + ajax.responseText + ")";
+			}
+		}
+	};
+	ajax.send(null);
+}
