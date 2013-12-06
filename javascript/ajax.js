@@ -152,3 +152,7 @@ function likeInDetail(question_id) {
 	};
 	ajax.send(null);
 }
+
+function search() {
+	alert("haha");
+}

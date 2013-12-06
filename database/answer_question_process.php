@@ -15,6 +15,11 @@ function answer_question($question_id, $answer_username, $answer_content) {
 			':answer_username' => $answer_username,
 			':answer_content' => $answer_content 
 	) );
+	$sql = "update user set u_mark = u_mark + 1 where u_username=:u_username";
+	$result = $connection->prepare ( $sql );
+	$result->execute ( array (
+			':u_username' => $answer_username 
+	) );
 	$row = $result->rowCount ();
 	if ($row == 0) {
 		echo "<script>window.alert(\"回答失败，请重新回答\")</script>";

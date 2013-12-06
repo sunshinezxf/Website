@@ -437,7 +437,7 @@ div .row {
 	background: tranparent;
 }
 
-.login input[type=submit],.sign_up input[type=submit],.ask_question input[type=submit],.ask_question input[type=file],.answer input[type=submit]
+.login input[type=submit],.sign_up input[type=submit],.ask_question input[type=submit],.ask_question input[type=file],.answer input[type=submit],.message input[type=submit]
 	{
 	color: #000000;
 	width: 25%;
@@ -514,7 +514,7 @@ div .row {
 	float: right;
 }
 
-.question_detail {
+.question_detail,.personal {
 	width: 50%;
 	background-color: #ffffcc;
 	text-align: center;
@@ -523,8 +523,22 @@ div .row {
 	opacity: 0.85;
 }
 
-.question_detail .title {
+.question_detail .title,.personal .title {
 	background: none;
+}
+
+.personal .p_username {
+	margin-left: 10%;
+	font-size: 16px;
+	font-weight: normal;
+	text-align: left;
+}
+
+.personal .p_mark {
+	text-align: left;
+	font-size: 16px;
+	font-weight: normal;
+	margin-left: 10%;
 }
 
 .question_detail .tag {
@@ -583,6 +597,35 @@ div .row {
 	height: 100%;
 }
 
+.messagearea {
+	text-align: left;
+}
+
+.message .button {
+	text-align: center;
+	height: 32px;
+	width: 80%;
+	margin-left: 30px;
+	margin-top: 20px;
+	position: relative;
+	z-index: 999;
+	background-color: transparent;
+}
+
+.message textarea {
+	box-shadow: inset 0 5px 5px #f5f5f5;
+	border: 1px solid #d1d1d1;
+	width: 70%;
+	margin-top: -20px;
+	margin-right: 11%;
+	font-family: arial, sans-serif;
+	font-size: 16px;
+	padding: 7px 8px 6px 8px;
+	outline: none;
+	height: 100%;
+	border-radius: 5px;
+}
+
 .question_detail label {
 	float: left;
 }
@@ -591,16 +634,46 @@ input[type='number'] {
 	visibility: hidden;
 }
 
-.module .answer_display {
+.module .answer_display,.module .message_display {
 	font-weight: normal;
 	text-align: left;
 }
 
-.answer_display .username {
+.answer_display .username,.message_display .username {
 	font-weight: normal;
 	text-align: left;
 	float: left;
 	color: #abcdef;
+}
+
+.content input[type='text'] {
+	border-radius: 5px;
+	box-shadow: inset 0 5px 5px #f5f5f5;
+	border: 1px solid #d1d1d1;
+	width: 50%;
+	margin: 0 0 10px 0;
+	margin-left: 10%;
+	font-family: arial, sans-serif;
+	font-size: 16px;
+	padding: 7px 8px 6px 8px;
+	outline: none;
+}
+
+.content input[type=button] {
+	color: #000000;
+	width: 10%;
+	font-size: 16px;
+	font-weight: bold;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	background: url('../material/primary-button.png') repear-x 0 0 #93a445;
+	padding: 7px 15px 6px 15px;
+	border: 1px solid #93a533;
+	cursor: pointer;
+	border-radius: 5px;
+	dislay: inline-block;
+	line-height: normal;
 }
 
 .answer_display .answer_content {

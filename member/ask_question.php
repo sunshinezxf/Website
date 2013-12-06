@@ -34,7 +34,8 @@ if (! isset ( $_SESSION ['username'] ) && ! isset ( $_SESSION ['password'] )) {
 								<?php
 							} else {
 								?>
-									<li><a><?php echo $_SESSION['username']?></a></li>
+									<li><a
+								href="./personal_information.php?username=<?php echo $_SESSION['username']?>"><?php echo $_SESSION['username']?></a></li>
 							<li><a href="./ask_question.php">提问</a></li>
 							<li><a href="./logout.php">退出</a></li>
 									<?php
@@ -49,7 +50,8 @@ if (! isset ( $_SESSION ['username'] ) && ! isset ( $_SESSION ['password'] )) {
 			<div class="module ask_question">
 				<b>提出问题</b>
 				<hr />
-				<form action="../database/ask_question_process.php" method="post" enctype="multipart/form-data">
+				<form action="../database/ask_question_process.php" method="post"
+					enctype="multipart/form-data">
 					<div class="caption">
 						<label>标题：</label><input type="text" name="question_title" />
 					</div>

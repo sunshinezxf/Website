@@ -27,7 +27,7 @@ include_once './database/get_tag.php';
 					<nav>
 						<ul>
 							<li><div class="search">
-									<input class="search_input" autocomplete="off" /> <a>搜索</a>
+									<input class="search_input" id="search_input" /> <a>搜索</a>
 								</div></li>
 								<?php
 								if (! isset ( $_SESSION ['username'] )) {
@@ -37,7 +37,8 @@ include_once './database/get_tag.php';
 								<?php
 								} else {
 									?>
-									<li><a><?php echo $_SESSION['username']?></a></li>
+									<li><a
+								href="./member/personal_information.php?username=<?php echo $_SESSION['username']?>"><?php echo $_SESSION['username']?></a></li>
 							<li><a href="./member/ask_question.php">提问</a></li>
 							<li><a href="./member/logout.php">退出</a></li>
 									<?php

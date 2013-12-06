@@ -22,6 +22,11 @@ function ask_question($question_title, $question_category, $question_category, $
 			':q_username' => $question_user_name,
 			':q_path' => $question_pic_path 
 	) );
+	$sql = "update user set u_mark = u_mark + 5 where u_username=:u_username";
+	$result = $connection->prepare ( $sql );
+	$result->execute ( array (
+			':u_username' => $question_user_name 
+	) );
 	$row = $result->rowCount ();
 	if ($row == 0) {
 		echo "<script>window.alert(\"提交问题失败，请重新提交\")</script>";

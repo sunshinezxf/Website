@@ -36,7 +36,8 @@ $question_id = $_GET ['question_id'];
 								<?php
 								} else {
 									?>
-									<li><a><?php echo $_SESSION['username']?></a></li>
+									<li><a
+							href="./personal_information.php?username=<?php echo $_SESSION['username']?>"><?php echo $_SESSION['username']?></a></li>
 						<li><a href="./ask_question.php">提问</a></li>
 						<li><a href="./logout.php">退出</a></li>
 									<?php
