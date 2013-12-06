@@ -8,6 +8,7 @@ include_once '../object/question.class.php';
 <head>
 <meta charset="utf-8" />
 <link rel="stylesheet" type="text/css" href="./css/core.css" />
+<script type="text/javascript" src="../javascript/ajax.js"></script>
 <title>content</title>
 </head>
 <?php
@@ -43,7 +44,7 @@ while ( true ) {
 		if ($question_path) {
 			echo "<img class=\"show\" src=\"./" . $question->get_question_path () . "\" />";
 		}
-		echo "<img class=\"like\" src=\"./material/like.jpg\" />";
+		echo "<a href=\"javascript:void(0)\" onclick=\"likeInMain('" . $question->get_question_id () . "')\"><img class=\"like\" src=\"./material/like.jpg\" /><em id=\"" . $question->get_question_id () . "\">(" . $question->get_question_like () . ")</em></a>";
 		echo "</div>";
 		echo "</div>";
 		echo "</div>";
