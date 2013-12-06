@@ -60,9 +60,31 @@ $question_id = $_GET ['question_id'];
 			<div class="title"><?php echo $question->get_question_title()?></div>
 			<div class="tag"><?php echo $question->get_question_category()?></div>
 			<div class="description"><?php echo $question->get_question_description()?></div>
+			<div class="author">ask by:&nbsp;<?php echo $question->get_question_username()?></div>
 			<div class="picture">
 				<img alt="Picture"
 					src="<?php echo "../".$question->get_question_path()?>" />
+			</div>
+			<div>
+				<a href="javascript:void(0)"
+					onclick="likeInDetail(<?php echo $question->get_question_id()?>)">
+					<img class="like" alt="picture" src="../material/like.jpg" /><em
+					id=<?php echo $question->get_question_id()?>>(<?php echo $question->get_question_like()?>)</em>
+				</a>
+			</div>
+			<hr />
+			<div class="module answerarea">
+				<label>我来评论：</label>
+				<form action="../database/answer_question_process.php" method="post">
+					<div class="answer">
+						<input type="number" name="question_id"
+							value=<?php echo $question->get_question_id()?>>
+						<textarea rows="6" name="answer_content"></textarea>
+						<div class="button">
+							<input type="submit" name="answer" value="我要回答" />
+						</div>
+					</div>
+				</form>
 			</div>
 		</div>
 	</div>
