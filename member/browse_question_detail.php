@@ -112,6 +112,9 @@ $question_id = $_GET ['question_id'];
 				</form>
 			</div>
 		</div>
+		<div class="main-footer">
+			<div class="row footer">&copy; Sunshine&#8482;,&nbsp;2013</div>
+		</div>
 	</div>
 </body>
 </html>
