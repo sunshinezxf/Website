@@ -72,6 +72,31 @@ $question_id = $_GET ['question_id'];
 					id=<?php echo $question->get_question_id()?>>(<?php echo $question->get_question_like()?>)</em>
 				</a>
 			</div>
+			<?php
+			$sql = "select * from answer_question where question_id=:question_id";
+			$result = $connection->prepare ( $sql );
+			$result->execute ( array (
+					':question_id' => $question_id 
+			) );
+			$i = 0;
+			while ( true ) {
+				$temp = $result->fetch ( PDO::FETCH_ASSOC );
+				if ($temp == null) {
+					break;
+				} else {
+					$i ++;
+					$username = $temp ['answer_username'];
+					$description = $temp ['answer_content'];
+					echo "<div class=\"module\">";
+					echo "<div class=\"answer_display\">";
+					echo "<div class=\"username\">" . $username . ": &nbsp;</div>";
+					echo "<div class=\"answer_content\">" . $description . "</div>";
+					echo "<div class=\"stairs\">第" . $i . "楼</div>";
+					echo "</div>";
+					echo "</div>";
+				}
+			}
+			?>
 			<hr />
 			<div class="module answerarea">
 				<label>我来评论：</label>

@@ -591,6 +591,30 @@ input[type='number'] {
 	visibility: hidden;
 }
 
+.module .answer_display {
+	font-weight: normal;
+	text-align: left;
+}
+
+.answer_display .username {
+	font-weight: normal;
+	text-align: left;
+	float: left;
+	color: #abcdef;
+}
+
+.answer_display .answer_content {
+	font-weight: normal;
+	font-size: 16px;
+}
+
+.answer_display .stairs {
+	float: right;
+	text-align: left;
+	font-size: 12px;
+	color: #aabbcc;
+}
+
 .footer {
 	margin: -8px -8px 0 0;
 	text-align: center;

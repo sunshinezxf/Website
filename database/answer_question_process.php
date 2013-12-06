@@ -21,7 +21,6 @@ function answer_question($question_id, $answer_username, $answer_content) {
 		echo "<script>window.location.href=\"../member/browse_question_detail.php?question_id=" . $question_id . "\"</script>";
 		return;
 	} else {
-		echo "<script>window.alert(\"回答成功\")</script>";
 		echo "<script>window.location.href=\"../member/browse_question_detail.php?question_id=" . $question_id . "\"</script>";
 	}
 }
