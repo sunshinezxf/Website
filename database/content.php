@@ -19,7 +19,7 @@ $result->execute ();
 while ( true ) {
 	$temp = $result->fetch ( PDO::FETCH_ASSOC );
 	if ($temp == null) {
-		return;
+		break;
 	} else {
 		$question_id = $temp ['q_id'];
 		$question_title = $temp ['q_title'];
@@ -27,12 +27,13 @@ while ( true ) {
 		$question_description = $temp ['q_description'];
 		$question_username = $temp ['q_username'];
 		$question_path = $temp ['q_path'];
-		$question = new question ( $question_id, $question_title, $question_category, $question_description, $question_username, $question_path );
+		$question_like = $temp ['q_like'];
+		$question = new question ( $question_id, $question_title, $question_category, $question_description, $question_username, $question_path, $question_like );
 		
 		echo "<div class=\"display module\">";
 		echo "<div class=\"summary\">";
 		echo "<h3>";
-		echo "<a href=\"../member/browse_question_detail.php?question_id=".urlencode($question_id)."\" target=\"_blank\">" . $question->get_question_title () . "</a>";
+		echo "<a href=\"../member/browse_question_detail.php?question_id=" . urlencode ( $question_id ) . "\" target=\"_blank\">" . $question->get_question_title () . "</a>";
 		echo "<a class=\"tag\">" . $question->get_question_category () . "</a>";
 		echo "</h3>";
 		echo "<div class=\"question_content\">";

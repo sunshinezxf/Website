@@ -6,13 +6,15 @@ class question {
 	private $question_description;
 	private $question_username;
 	private $question_path;
-	public function question($question_id, $question_title, $question_category, $question_description, $question_username, $question_path) {
+	private $question_like;
+	public function question($question_id, $question_title, $question_category, $question_description, $question_username, $question_path, $question_like) {
 		$this->question_id = $question_id;
 		$this->question_title = $question_title;
 		$this->question_category = $question_category;
 		$this->question_description = $question_description;
 		$this->question_username = $question_username;
 		$this->question_path = $question_path;
+		$this->question_like = $question_like;
 	}
 	public function get_question_id() {
 		return $this->question_id;
@@ -32,6 +34,9 @@ class question {
 	public function get_question_path() {
 		$this->question_path = str_replace ( "D:/Programming/PHP/Appserv/www/Website", "", $this->question_path );
 		return $this->question_path;
+	}
+	public function get_question_like() {
+		return $this->question_like;
 	}
 }
 

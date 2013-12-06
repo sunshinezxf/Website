@@ -54,7 +54,7 @@ $question_id = $_GET ['question_id'];
 				':q_id' => $question_id 
 		) );
 		$temp = $result->fetch ( PDO::FETCH_ASSOC );
-		$question = new question ( $temp ['q_id'], $temp ['q_title'], $temp ['q_category'], $temp ['q_description'], $temp ['q_username'], $temp ['q_path'] );
+		$question = new question ( $temp ['q_id'], $temp ['q_title'], $temp ['q_category'], $temp ['q_description'], $temp ['q_username'], $temp ['q_path'], $temp ['q_like'] );
 		?>
 		<div class="module grid-layout content question_detail">
 			<div class="title"><?php echo $question->get_question_title()?></div>

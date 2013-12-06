@@ -54,6 +54,10 @@ include_once './database/get_tag.php';
 				<div class="tag">
 					<a href="./database/content.php" target="content">全部</a>
 				</div>
+				<div class="tag">
+					<a href="./database/get_top_ten_question.php" target="content">TOP
+						5</a>
+				</div>
 			<?php
 			$tag_array = get_tag ();
 			for($i = 0; $i < count ( $tag_array ); $i ++) {
